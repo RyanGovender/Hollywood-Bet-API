@@ -15,7 +15,7 @@ namespace HollywoodBets.BusinessLayer
             var matched = from country in Data.GetCountries()
                           where sportFromCountry.Any(x => x.CountryId == country.countryId)
                           select country;
-            return matched;
+            return matched;     
         }
         public static IEnumerable<Tournament> GetTournamentsBasedOnCountry(int?sportid,int?countryId)
         {
