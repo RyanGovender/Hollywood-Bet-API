@@ -52,7 +52,6 @@ namespace HollywoodBets.DAL
             };
         }
 
-
         public static List<SportCountry> GetSportCountry()
         {
             var list = new List<SportCountry>
@@ -77,7 +76,9 @@ namespace HollywoodBets.DAL
                 new Tournament(3,"Serie A"),
                 new Tournament(4,"Bundesliga"),
                 new Tournament(5,"Serie A"),
-                new Tournament(6,"IPL")
+                new Tournament(6,"IPL"),
+                new Tournament(7,"English Championship"),
+                new Tournament(8,"Big Bash")
             };
         }
 
@@ -88,7 +89,34 @@ namespace HollywoodBets.DAL
                 new SportTournament(5,1,1),
                 new SportTournament(5,2,2),
                 new SportTournament(5,4,4),
-                new SportTournament(8,6,1)
+                new SportTournament(5,5,3),
+                new SportTournament(8,6,1),
+                new SportTournament(8,8,3),
+                new SportTournament(5,7,1)
+            };
+        }
+
+        public static List<Event> GetAllEvents()
+        {
+            return new List<Event>
+            { 
+               new Event(1,1,"Manchester United vs Manchester City",DateTime.Now.Date),
+               new Event(1,2,"Newcastle vs Everton",DateTime.Now.Date),
+               new Event(2,3,"Real Mardrid vs FC Barcelona",DateTime.Now.Date)
+            };
+
+        }
+
+        public static List<BetTypes> AllBetTypes()
+        {
+            return new List<BetTypes>
+            {
+                new BetTypes(1,"Full Time"),
+                new BetTypes(2,"Double Chance"),
+                new BetTypes(3,"Both Teams To Score"),
+                new BetTypes(4,"Totals"),
+                new BetTypes(5,"Half Time"),
+                new BetTypes(6,"Winner")
             };
         }
     }

@@ -15,7 +15,15 @@ namespace HollywoodBets.BusinessLayer
             var matched = from country in Data.GetCountries()
                           where sportFromCountry.Any(x => x.CountryId == country.countryId)
                           select country;
-            return matched;     
+            return CheckIfTournamnetIsActive(matched);     
+        }
+
+        private static IEnumerable<Country> CheckIfTournamnetIsActive(IEnumerable<Country> countries)
+        {
+            var _country = from country in countries
+                           where Data.GetSportTournaments().Any(events => events.CountryId == country.countryId)
+                           select country;
+            return _country;
         }
         public static IEnumerable<Tournament> GetTournamentsBasedOnCountry(int?sportid,int?countryId)
         {
@@ -24,6 +32,14 @@ namespace HollywoodBets.BusinessLayer
                                       where tournamentsBasedOnSportAndCountry.Any(events => events.TournamentId == tournament.TournamentId)
                                       select tournament;
             return tournamentCountries;
+        }
+
+        public static IEnumerable<Event> GetAllEvents(int?tournamentId)
+        {
+            var getEventsBasedOnTournament = from events in Data.GetAllEvents()
+                                             where events.TournamentID == tournamentId
+                                             select events;
+            return getEventsBasedOnTournament;
         }
     }
 }

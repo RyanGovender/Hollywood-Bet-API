@@ -47,14 +47,8 @@ namespace HolluwoodBets
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors("MyPolicy");
 
-            //app.UseCors(builder =>
-            //{
-            //    builder.WithOrigins("https://localhost:44330",
-            //                        "http://localhost:4200"
-            //                        );
-            //});
+            app.UseCors("MyPolicy");
 
             app.UseAuthorization();
 
