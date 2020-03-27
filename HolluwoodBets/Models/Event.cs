@@ -11,6 +11,7 @@ namespace HollywoodBets.Models
         public int EventID { get; set; }
         public string EventName { get; set; }
         public DateTime EventDate { get; set; }
+    
 
         public Event(int tournamentId,int eventId, string eventName,DateTime eventDate)
         {
@@ -18,6 +19,7 @@ namespace HollywoodBets.Models
             EventID = eventId;
             EventName = eventName;
             EventDate = eventDate;
+          
         }
     }
 }

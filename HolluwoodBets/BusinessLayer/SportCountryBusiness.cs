@@ -41,5 +41,23 @@ namespace HollywoodBets.BusinessLayer
                                              select events;
             return getEventsBasedOnTournament;
         }
+
+        public static IEnumerable<BetTypes> GetBetTypesForTournament(int?tournamentId)//fix!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        {
+            List<BetTypes> _betTypes = new List<BetTypes>();
+            var getBetTypesBasedOnTournaments = Data.TournamentBetTypes().Where(x => x.TournamentId.Equals(tournamentId)).FirstOrDefault();
+            if (getBetTypesBasedOnTournaments == null) return null;
+            for (int i = 0; i < Data.AllBetTypes().Count; i++)
+            {
+                for (int x = 0; x < getBetTypesBasedOnTournaments.AllowedBetTypes.Count; x++)
+                {
+                    if (Data.AllBetTypes().ElementAt(i).BetTypeId == getBetTypesBasedOnTournaments.AllowedBetTypes[x] )
+                    {
+                        _betTypes.Add(Data.AllBetTypes().ElementAt(i));
+                    }
+                }
+            }
+            return _betTypes;
+        }
     }
 }

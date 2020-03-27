@@ -102,7 +102,8 @@ namespace HollywoodBets.DAL
             { 
                new Event(1,1,"Manchester United vs Manchester City",DateTime.Now.Date),
                new Event(1,2,"Newcastle vs Everton",DateTime.Now.Date),
-               new Event(2,3,"Real Mardrid vs FC Barcelona",DateTime.Now.Date)
+               new Event(2,3,"Real Mardrid vs FC Barcelona",DateTime.Now.Date),
+               new Event(6,4,"Chennai Super Kings vs Royal Challengers Bangalore ",DateTime.Now.Date)
             };
 
         }
@@ -117,6 +118,17 @@ namespace HollywoodBets.DAL
                 new BetTypes(4,"Totals"),
                 new BetTypes(5,"Half Time"),
                 new BetTypes(6,"Winner")
+            };
+        }
+
+        public static List<TournamentBetType> TournamentBetTypes()
+        {
+            return new List<TournamentBetType>
+            {
+                new TournamentBetType(1,1,new List<int>{
+               1,2,3,4,5})
+                ,new TournamentBetType(3,2,new List<int>{ 1,2,3,5})
+               ,new TournamentBetType(2,6,new List<int>{6})
             };
         }
     }

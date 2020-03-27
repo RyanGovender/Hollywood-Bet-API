@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HollywoodBets.BusinessLayer;
+using HollywoodBets.DAL;
 using HollywoodBets.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +20,13 @@ namespace HollywoodBets.Controllers
         public IEnumerable<Tournament> Get(int? sportId,int?countryId)
         {
             return SportCountryBusiness.GetTournamentsBasedOnCountry(sportId, countryId);
+        }
+
+        //[HttpGet("/{tournamentId}")] https://localhost:44330/api/tournaments/GetBetTypes?tournamentId=1
+        [Route("GetBetTypes")]
+        public IEnumerable<BetTypes> GetBetTypes(int?tournamentId)
+        {
+            return SportCountryBusiness.GetBetTypesForTournament(tournamentId);
         }
     }
 }
