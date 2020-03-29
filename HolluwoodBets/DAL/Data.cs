@@ -131,5 +131,35 @@ namespace HollywoodBets.DAL
                ,new TournamentBetType(2,6,new List<int>{6})
             };
         }
+
+        public static List<Market> AllMarkets()
+        {
+            return new List<Market>
+            {
+                new Market(1,"Home"),
+                new Market(2,"Draw"),
+                new Market(3,"Away"),
+                new Market(4,"Yes"),
+                new Market(5,"No"),
+                new Market(6,"Under 2.5"),
+                new Market(7,"Over 2.5")
+            };
+        }
+
+        public static List<MarketBetType> MarketForBetTypes()//market && bettype 
+        {
+            return new List<MarketBetType>
+            {
+                new MarketBetType(1,1),
+                new MarketBetType(2,1),
+                new MarketBetType(3,1),
+                new MarketBetType(4,3),
+                new MarketBetType(5,3),
+                new MarketBetType(1,6),
+                new MarketBetType(3,6),
+                new MarketBetType(6,4),
+                new MarketBetType(7,4)
+            };
+        }
     }
 }

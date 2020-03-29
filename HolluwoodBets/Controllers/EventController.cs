@@ -20,5 +20,11 @@ namespace HollywoodBets.Controllers
             return SportCountryBusiness.GetAllEvents(tournamentId);
         }
 
+        [Route("GetMarkets")]
+        public IEnumerable<Market> GetMarkets(int? betTypeId)
+        {
+            return SportCountryBusiness.GetBetTypes(betTypeId);
+        }
+
     }
 }

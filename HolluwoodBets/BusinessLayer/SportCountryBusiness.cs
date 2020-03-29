@@ -42,7 +42,7 @@ namespace HollywoodBets.BusinessLayer
             return getEventsBasedOnTournament;
         }
 
-        public static IEnumerable<BetTypes> GetBetTypesForTournament(int?tournamentId)//fix!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        public static IEnumerable<BetTypes> GetBetTypesForTournament(int?tournamentId)
         {
             List<BetTypes> _betTypes = new List<BetTypes>();
             var getBetTypesBasedOnTournaments = Data.TournamentBetTypes().Where(x => x.TournamentId.Equals(tournamentId)).FirstOrDefault();
@@ -59,5 +59,49 @@ namespace HollywoodBets.BusinessLayer
             }
             return _betTypes;
         }
+
+        public static Tournament GetTournaments(int?tournamentId)
+        {
+            var _selectedTournament = Data.GetAllTournament().Where(x => x.TournamentId == tournamentId).FirstOrDefault();
+            return _selectedTournament != null ? _selectedTournament : null;
+        }
+
+        public static Country GetCountryBasedOnSelectedTournament(int?tournamentId)
+        {
+            int? _getCountryId = Data.GetSportTournaments().Where(x => x.TournamentId == tournamentId).FirstOrDefault().CountryId;
+            return _getCountryId != null ? GetCountry(_getCountryId) : null;
+
+        }
+
+        public static Country GetCountry(int?countryId)
+        {
+            var _country = Data.GetCountries().Where(country => country.countryId == countryId).FirstOrDefault();
+            return _country != null ? _country : null;
+        }
+
+        public static IEnumerable<Market> GetBetTypes(int?betTypeId)
+        {
+            var _marketForBetTypes = GetMarketForBetType(betTypeId).ToList();
+            List<Market> _market = new List<Market>();
+            if (_marketForBetTypes == null) return null;
+            for (int i = 0; i < _marketForBetTypes.Count; i++)
+            {
+                for (int x = 0; x < Data.AllMarkets().Count; x++)
+                {
+                    var _marketId = Data.AllMarkets().ElementAt(x);
+                    if (_marketForBetTypes[i].MarketId == _marketId.MarketId)
+                    {
+                        _market.Add(_marketId);
+                    }
+                }
+            }
+            return _market;
+        }
+
+        public static IEnumerable<MarketBetType> GetMarketForBetType(int?betTypeId)
+        {
+            return Data.MarketForBetTypes().Where(bettype => bettype.BetTypeId == betTypeId);
+        }
+        
     }
 }

@@ -28,5 +28,18 @@ namespace HollywoodBets.Controllers
         {
             return SportCountryBusiness.GetBetTypesForTournament(tournamentId);
         }
+
+        [Route("GetTournament")]
+        public Tournament GetTournament(int?tournamentId)
+        {
+            return SportCountryBusiness.GetTournaments(tournamentId);
+        }
+
+        //[HttpGet("{tournamentId}")]
+         [Route("GetCountryBasedOnTournament")]
+        public Country GetCountryBasedOnTournament(int?tournamentId)
+        {
+            return SportCountryBusiness.GetCountryBasedOnSelectedTournament(tournamentId);
+        }
     }
 }
