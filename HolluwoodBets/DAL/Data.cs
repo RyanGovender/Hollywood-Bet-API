@@ -48,7 +48,8 @@ namespace HollywoodBets.DAL
                 new Country(1,"England","GB"),
                 new Country(2,"Spain","ES"),
                 new Country(3,"Brazil","BR"),
-                new Country(4,"Germany","DE")
+                new Country(4,"Germany","DE"),
+                new Country(5,"India","IN")
             };
         }
 
@@ -60,7 +61,7 @@ namespace HollywoodBets.DAL
                 new SportCountry(5,2),
                 new SportCountry(5,3),
                 new SportCountry(5,4),
-                new SportCountry(8,1),
+                new SportCountry(8,5),
                 new SportCountry(8,3),
             };
 
@@ -90,7 +91,7 @@ namespace HollywoodBets.DAL
                 new SportTournament(5,2,2),
                 new SportTournament(5,4,4),
                 new SportTournament(5,5,3),
-                new SportTournament(8,6,1),
+                new SportTournament(8,6,5),
                 new SportTournament(8,8,3),
                 new SportTournament(5,7,1)
             };
@@ -142,7 +143,10 @@ namespace HollywoodBets.DAL
                 new Market(4,"Yes"),
                 new Market(5,"No"),
                 new Market(6,"Under 2.5"),
-                new Market(7,"Over 2.5")
+                new Market(7,"Over 2.5"),
+                new Market(8,"Home + Away"),
+                new Market(9,"Home + Draw"),
+                new Market(10,"Away + Draw")
             };
         }
 
@@ -158,7 +162,13 @@ namespace HollywoodBets.DAL
                 new MarketBetType(1,6),
                 new MarketBetType(3,6),
                 new MarketBetType(6,4),
-                new MarketBetType(7,4)
+                new MarketBetType(7,4),
+                new MarketBetType(8,2),
+                new MarketBetType(9,2),
+                new MarketBetType(10,2),
+                new MarketBetType(1,5),
+                new MarketBetType(2,5),
+                new MarketBetType(3,5)
             };
         }
     }
