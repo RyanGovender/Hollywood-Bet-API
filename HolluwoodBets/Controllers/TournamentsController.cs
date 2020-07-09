@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using HollywoodBets.BusinessLayer;
 using HollywoodBets.DAL;
-using HollywoodBets.Models;
+using HollywoodBets.Models.Model;
+using HollywoodBets.Repository.Repository.Interface;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,31 +16,24 @@ namespace HollywoodBets.Controllers
     [EnableCors("MyPolicy")]
     public class TournamentsController : Controller
     {
+        private ITournament _tournamentRepository;
+        public TournamentsController(ITournament tournamentRepository)
+        {
+            _tournamentRepository = tournamentRepository;
+        }
+       
         //https://localhost:44330/api/sportcountry/?sportId={sportId}&countryId={countryId}
         [HttpGet]
-        public IEnumerable<Tournament> Get(int? sportId,int?countryId)
+        public IQueryable<Tournament> Get(int? sportId,int?countryId)
         {
-            return SportCountryBusiness.GetTournamentsBasedOnCountry(sportId, countryId);
-        }
-
-        //[HttpGet("/{tournamentId}")] https://localhost:44330/api/tournaments/GetBetTypes?tournamentId=1
-        [Route("GetBetTypes")]
-        public IEnumerable<BetTypes> GetBetTypes(int?tournamentId)
-        {
-            return SportCountryBusiness.GetBetTypesForTournament(tournamentId);
+            return _tournamentRepository.GetAllTournamentsForSportBasedOnCountry(sportId, countryId);
         }
 
         [Route("GetTournament")]
-        public Tournament GetTournament(int?tournamentId)
+        public Tournament GetTournament(int? tournamentId)
         {
-            return SportCountryBusiness.GetTournaments(tournamentId);
+            return _tournamentRepository.GetTournament(tournamentId);
         }
 
-        //[HttpGet("{tournamentId}")]
-         [Route("GetCountryBasedOnTournament")]
-        public Country GetCountryBasedOnTournament(int?tournamentId)
-        {
-            return SportCountryBusiness.GetCountryBasedOnSelectedTournament(tournamentId);
-        }
     }
 }

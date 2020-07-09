@@ -4,9 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using HollywoodBets.BusinessLayer;
 using HollywoodBets.DAL;
-using HollywoodBets.Models;
+using HollywoodBets.Models.Model;
+using HollywoodBets.Repository.Repository.Interface;
+using log4net.Core;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace HollywoodBets.Controllers
 {
@@ -15,12 +18,27 @@ namespace HollywoodBets.Controllers
     [EnableCors("MyPolicy")]
     public class SportCountryController : Controller
     {
-        //https://localhost:44330/api/sportcountry?id={SportId}
+
+       
+        private ICountry _countryRepository;
+        private readonly ILogger<SportController> _logger;
+        public SportCountryController(ICountry countryRepository,ILogger<SportController> logger)
+        {
+            _countryRepository = countryRepository;
+            _logger = logger;
+        }
 
         [HttpGet]
-        public IEnumerable<Country> Get(int? sportId)
+        public IQueryable<Country> Get(int? sportId) //https://localhost:44330/api/sportcountry?sportId=5
         {
-            return SportCountryBusiness.GetSportCountries(sportId);
+            _logger.LogInformation("Get countries for sport id : {0}",sportId);
+            return _countryRepository.GetCountryForSport(sportId);
+        }
+
+        [Route("GetCountryBasedOnTournament")]
+        public Country GetCountryBasedOnTournament(int?tournamentId)
+        {
+            return _countryRepository.GetCountryBasedOnTournament(tournamentId);
         }
 
     }

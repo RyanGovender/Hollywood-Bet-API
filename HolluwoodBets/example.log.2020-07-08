@@ -1,0 +1,111 @@
+2020-07-08 10:45:33,092  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-08 10:45:33,232  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-08 10:45:33,450  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-08 10:45:35,806  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdds'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 10:45:35,810  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'Market'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 10:58:47,111  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-08 10:58:47,268  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-08 10:58:47,369  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-08 10:58:48,898  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdds'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 10:58:48,931  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'Market'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 10:58:54,921  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 10:58:54,970  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 10:58:58,426  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 10:58:58,444  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 11:00:03,116  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-08 11:00:03,382  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-08 11:00:03,389  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-08 11:00:04,756  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdds'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 11:00:04,763  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'Market'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 11:00:17,653  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 11:00:17,696  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 11:00:20,569  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 11:00:20,575  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 11:00:20,599  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 11:00:20,736  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 11:00:25,025  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 11:00:27,812  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 11:00:42,051  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 11:00:42,071  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 11:05:44,630  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-08 11:05:44,659  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-08 11:05:44,666  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-08 11:05:46,159  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdds'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 11:05:46,162  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'Market'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 11:05:58,227  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 11:06:02,027  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 11:06:02,028  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 11:06:02,073  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 11:06:02,250  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 11:06:05,246  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 12:14:21,854  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-08 12:14:22,082  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-08 12:14:22,091  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-08 12:14:24,680  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdds'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 12:14:24,684  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'Market'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-08 12:14:47,719  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 12:14:47,815  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 12:14:55,796  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 12:14:55,804  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 12:14:55,876  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 12:14:56,094  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 12:15:02,895  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 12:15:13,283  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 12:15:18,549  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 13:51:04,568  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 13:51:08,125  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 13:51:08,169  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 13:58:39,177  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 13:58:39,244  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 13:58:43,769  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 13:58:43,772  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 13:58:43,789  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 13:58:43,891  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 13:58:46,715  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 13:58:48,072  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 15:33:02,486  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 15:33:02,534  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 15:33:46,657  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 15:33:46,687  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 15:33:46,702  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 15:33:46,875  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 15:34:02,529  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 15:40:58,545  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 15:40:59,736  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 15:41:12,718  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 15:41:14,018  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 15:43:34,678  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 15:43:34,719  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 15:43:34,722  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 15:43:34,976  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:12:39,530  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 16:12:39,533  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 16:12:39,610  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 16:12:39,732  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:13:15,852  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 16:13:15,860  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 16:13:15,860  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 16:13:16,067  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:13:39,458  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 16:13:39,461  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 16:13:39,461  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 16:13:39,562  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:13:51,435  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 16:28:15,642  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 16:28:15,718  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 16:28:20,088  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 2
+ 2020-07-08 16:28:20,098  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 2 accessed.
+ 2020-07-08 16:28:20,174  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 2
+ 2020-07-08 16:28:26,844  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 16:28:26,888  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5
+ 2020-07-08 16:28:35,505  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1
+ 2020-07-08 16:28:35,505  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1
+ 2020-07-08 16:28:35,509  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 accessed.
+ 2020-07-08 16:28:35,602  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:28:42,674  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:28:44,810  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:28:48,358  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 2020-07-08 16:36:24,917  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:36:56,391  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1
+ 2020-07-08 16:36:58,435  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3
+ 

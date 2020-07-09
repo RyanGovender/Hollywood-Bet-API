@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollywoodBets", "HolluwoodBets\HollywoodBets.csproj", "{9C357A7A-5F3A-4146-9C7C-8C7333D6EBDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HollywoodBets", "HolluwoodBets\HollywoodBets.csproj", "{9C357A7A-5F3A-4146-9C7C-8C7333D6EBDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollywoodBets.Repository", "HollywoodBets.Repository\HollywoodBets.Repository.csproj", "{27A743D1-A435-477E-9677-63470C0264EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollywoodBets.Models", "HollywoodBets.Models\HollywoodBets.Models.csproj", "{74BF7788-C709-4D49-926A-DBADD7C9388B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollywoodBetsAdmin-API", "HollywoodBetsAdmin-API\HollywoodBetsAdmin-API.csproj", "{4AEC9F59-6D53-4A74-9051-FF53BDCED7B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9C357A7A-5F3A-4146-9C7C-8C7333D6EBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C357A7A-5F3A-4146-9C7C-8C7333D6EBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C357A7A-5F3A-4146-9C7C-8C7333D6EBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A743D1-A435-477E-9677-63470C0264EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A743D1-A435-477E-9677-63470C0264EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A743D1-A435-477E-9677-63470C0264EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A743D1-A435-477E-9677-63470C0264EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BF7788-C709-4D49-926A-DBADD7C9388B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BF7788-C709-4D49-926A-DBADD7C9388B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BF7788-C709-4D49-926A-DBADD7C9388B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BF7788-C709-4D49-926A-DBADD7C9388B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AEC9F59-6D53-4A74-9051-FF53BDCED7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AEC9F59-6D53-4A74-9051-FF53BDCED7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AEC9F59-6D53-4A74-9051-FF53BDCED7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AEC9F59-6D53-4A74-9051-FF53BDCED7B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

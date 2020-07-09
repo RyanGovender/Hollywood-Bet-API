@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HollywoodBets.DAL;
-using HollywoodBets.Models;
+using HollywoodBets.Models.Model;
+using HollywoodBets.Repository.Repository.Interface;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,11 +15,18 @@ namespace HollywoodBets.Controllers
     [EnableCors("MyPolicy")]
     public class SportController : Controller
     {
+        private ISportTree _sportTree;
+        public SportController(ISportTree sportTree)
+        {
+            _sportTree = sportTree;
+        }
 
         [HttpGet]
-        public IEnumerable<SportTree> Get()
+        public IQueryable<SportTree> Get()
         {
-            return Data.Sports.ToArray();
+
+            return _sportTree.GetAll();
         }
+
     }
 }
