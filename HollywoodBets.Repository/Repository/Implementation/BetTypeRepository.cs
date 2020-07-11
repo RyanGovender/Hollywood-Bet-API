@@ -1,4 +1,5 @@
-﻿using HollywoodBets.DAL;
+﻿using Dapper;
+using HollywoodBets.DAL;
 using HollywoodBets.Models.Model;
 using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
@@ -7,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.Data;
 namespace HollywoodBets.Repository.Repository.Implementation
 {
     public class BetTypeRepository :IBetType , ISqlRun<BetType>
@@ -20,7 +21,12 @@ namespace HollywoodBets.Repository.Repository.Implementation
 
         public IQueryable<BetType> GetBetTypesForTournament(int? tournamentId)
         {
-            return RunSql($"EXECUTE dbo.GetBetTypesForTournament {tournamentId}");
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new {tournamentId};
+                return connection.Query<BetType>("GetBetTypesForTournament",parameters,commandType:CommandType.StoredProcedure).AsQueryable();
+            }
+           
         }
 
         public IQueryable<BetType> RunSql(string sqlFormat)

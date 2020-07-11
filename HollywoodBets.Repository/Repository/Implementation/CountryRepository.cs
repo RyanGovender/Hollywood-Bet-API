@@ -1,4 +1,5 @@
-﻿using HollywoodBets.DAL;
+﻿using Dapper;
+using HollywoodBets.DAL;
 using HollywoodBets.Models.Model;
 using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
@@ -7,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace HollywoodBets.Repository.Repository.Implementation
 {
@@ -20,12 +22,21 @@ namespace HollywoodBets.Repository.Repository.Implementation
 
         public Country GetCountryBasedOnTournament(int? tournamentId)
         {
-            return RunSql($"EXECUTE dbo.GetCountryBasedOnTournament {tournamentId}").AsEnumerable().FirstOrDefault();
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new { tournamentId};
+                var result = connection.Query<Country>("GetCountryBasedOnTournament", parameters, commandType: CommandType.StoredProcedure).First();
+                return result != null ? result : null;
+            }
         }
 
         public IQueryable<Country> GetCountryForSport(int? sportId)
         {
-            return RunSql($"EXECUTE dbo.GetSportForSelectedCountry {sportId}");
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameter = new { sportId };
+                return connection.Query<Country>("GetSportForSelectedCountry", parameter, commandType:CommandType.StoredProcedure).AsQueryable();
+            }
         }
 
         public IQueryable<Country> RunSql(string sqlFormat)

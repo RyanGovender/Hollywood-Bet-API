@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using HollywoodBets.BusinessLayer;
 using HollywoodBets.Models.Model;
+using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
 using log4net.Core;
 using Microsoft.AspNetCore.Cors;
@@ -26,10 +27,30 @@ namespace HollywoodBets.Controllers
         }
 
         [HttpGet]
-        public IQueryable<Event> Get(int? tournamentId)
+        public IActionResult Get(int? tournamentId)
         {
-            _logger.LogInformation("Get events for tournament ID : {0}",tournamentId);
-            return _eventRepository.GetAllEventsForTournament(tournamentId);
+            try
+            {
+                if (!tournamentId.HasValue) return StatusCode(400, StatusCodes.ReturnStatusObject("Retriving events failed."));
+
+                var result = _eventRepository.GetAllEventsForTournament(tournamentId);
+                if(result.Any())
+                {
+                    _logger.LogInformation("Get events for tournament ID : {0} successful", tournamentId);
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogInformation("Get events for tournament ID : {0} has no items", tournamentId);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Retriving events failed."));
+                }
+            }
+            catch(Exception e)
+            {
+                _logger.LogInformation("Get events for tournament ID : {0} has failed", tournamentId);
+                return StatusCode(400, StatusCodes.ReturnStatusObject($"Retriving events failed. Error : {e.Message}"));
+            }
+           
         }
 
        [HttpPost]

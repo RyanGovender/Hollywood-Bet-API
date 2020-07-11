@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HollywoodBets.Models.Model;
+using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
 using log4net;
 using log4net.Core;
@@ -26,10 +27,30 @@ namespace HollywoodBets.Controllers
         }
 
         [Route("GetMarkets")]
-        public IQueryable<Market> GetMarkets(int? betTypeId)
+        public IActionResult GetMarkets(int? betTypeId)
         {
-            _logger.LogInformation("Get all markets for bet type Id :{0}", betTypeId);
-            return _marketRepository.GetMarketsForBetType(betTypeId);
+            try
+            {
+                if (!betTypeId.HasValue) return StatusCode(400, StatusCodes.ReturnStatusObject("Getting markets failed. No parameter provided."));
+
+                var result = _marketRepository.GetMarketsForBetType(betTypeId);
+
+                if(result.Any())
+                {
+                    _logger.LogInformation("Get all markets for bet type Id :{0} successful", betTypeId);
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogInformation("Get all markets for bet type Id :{0} has no items.", betTypeId);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("No markets found."));
+                }
+            }
+            catch(Exception e)
+            {
+                _logger.LogError("Get all markets for bet type Id :{0} has failed. : Error - {1}", betTypeId,e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Getting markets failed"));
+            }
         }
     }
 }

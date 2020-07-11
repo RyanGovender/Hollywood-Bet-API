@@ -1,10 +1,12 @@
-﻿using HollywoodBets.DAL;
+﻿using Dapper;
+using HollywoodBets.DAL;
 using HollywoodBets.Models.Model;
 using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,7 +32,11 @@ namespace HollywoodBets.Repository.Repository.Implementation
 
         public IQueryable<Event> GetAllEventsForTournament(int? tournamentId)
         {
-            return RunSql($"EXECUTE dbo.GetAllEventsForTournament {tournamentId}");
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new { tournamentId };
+                return connection.Query<Event>("GetAllEventsForTournament", parameters, commandType:CommandType.StoredProcedure).AsQueryable();
+            }
         }
 
         public IQueryable<Event> RunSql(string sqlFormat)
