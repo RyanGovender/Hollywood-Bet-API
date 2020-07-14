@@ -12,12 +12,52 @@ using System.Data;
 
 namespace HollywoodBets.Repository.Repository.Implementation
 {
-    public class CountryRepository : ICountry, ISqlRun<Country>
+    public class CountryRepository : ICountry
     {
-        private IDb _dBService;
-        public CountryRepository(IDb dbService)
+        public bool Add(Country item)
         {
-            _dBService = dbService;  
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new {
+                item.CountryName,
+                item.IconCode
+                };
+
+                var result = connection.Execute("sp_AddCountry",parameters,commandType:CommandType.StoredProcedure);
+
+                return result < 0;
+            }
+        }
+
+        public bool Delete(int? id)
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new { countryId = id };
+                var affectedRows = connection.Execute("sp_DeleteCountry", parameters,commandType:CommandType.StoredProcedure);
+                return affectedRows < 0;
+            }
+        }
+
+        public Country Find(int? id)
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    Id = id
+                };
+                var result = connection.Query<Country>("sp_FindCountry", parameters,commandType:CommandType.StoredProcedure);
+                return result.Any() ? result.FirstOrDefault() : null;
+            }
+        }
+
+        public IQueryable<Country> GetAll()
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<Country>("sp_GetAllCountries",commandType:CommandType.StoredProcedure).AsQueryable();
+            }
         }
 
         public Country GetCountryBasedOnTournament(int? tournamentId)
@@ -38,11 +78,20 @@ namespace HollywoodBets.Repository.Repository.Implementation
                 return connection.Query<Country>("GetSportForSelectedCountry", parameter, commandType:CommandType.StoredProcedure).AsQueryable();
             }
         }
-
-        public IQueryable<Country> RunSql(string sqlFormat)
+    
+        public bool Update(Country item)
         {
-            return _dBService.dBContext().Country.FromSqlRaw($"{sqlFormat}").AsQueryable();
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    item.CountryId,
+                    item.CountryName,
+                    item.IconCode
+                };
+                var affectedRows = connection.Execute("sp_UpdateCountry",parameters,commandType:CommandType.StoredProcedure);
+                return affectedRows < 0;
+            }
         }
-       
     }
 }

@@ -12,13 +12,70 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Implementation
 {
-    public class TournamentRepository : ITournament, ISqlRun<Tournament>
+    public class TournamentRepository : ITournament
     {
-        private IDb _dbService;
-        public TournamentRepository(IDb dbService)
+        public bool Add(Tournament item)
         {
-            _dbService = dbService;
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    item.TournamentName
+                };
+
+                var result = connection.Execute("sp_AddTournament", parameters, commandType: CommandType.StoredProcedure);
+
+                return result < 0;
+            }
         }
+
+        public bool AddSportTournamentCountry(SportTournament sportTournament)
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    sportTournament.SportId,
+                    sportTournament.TournamentId,
+                    sportTournament.CountryId
+                };
+
+                var result = connection.Execute("sp_AddSportCountry", parameters, commandType: CommandType.StoredProcedure);
+                return result < 0;
+            }
+        }
+
+        public bool Delete(int? id)
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new { tournamentID = id };
+                var affectedRows = connection.Execute("sp_DeleteTournament", parameters, commandType: CommandType.StoredProcedure);
+                return affectedRows < 0;
+            }
+        }
+
+        public Tournament Find(int? id)
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    Id = id
+                };
+                var result = connection.Query<Tournament>("sp_GetATournament", parameters, commandType: CommandType.StoredProcedure);
+                return result.Any() ? result.FirstOrDefault() : null;
+            }
+        }
+
+        public IQueryable<Tournament> GetAll()
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<Tournament>("sp_GetAllTournaments", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
+        }
+
         public IQueryable<Tournament> GetAllTournamentsForSportBasedOnCountry(int? sportId, int? countryId)
         {
             using (var connection = DatabaseService.SqlConnection())
@@ -38,9 +95,18 @@ namespace HollywoodBets.Repository.Repository.Implementation
             }
         }
 
-        public IQueryable<Tournament> RunSql(string sqlFormat)
+        public bool Update(Tournament item)
         {
-            return _dbService.dBContext().Tournament.FromSqlRaw($"{sqlFormat}").AsQueryable();
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    item.TournamentId,
+                    item.TournamentName
+                };
+                var affectedRows = connection.Execute("sp_UpdateTournament", parameters, commandType: CommandType.StoredProcedure);
+                return affectedRows < 0;
+            }
         }
     }
 }

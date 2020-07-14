@@ -1,4 +1,5 @@
 ﻿
+using HollywoodBets.Models.Custom_Models;
 using HollywoodBets.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,6 @@ namespace HollywoodBets.Repository.Repository.Interface
 {
     public interface IBetSlip : IRepository<BetSlip>
     {
-
+        bool Add(BetSlipViewModel item);
     }
 }

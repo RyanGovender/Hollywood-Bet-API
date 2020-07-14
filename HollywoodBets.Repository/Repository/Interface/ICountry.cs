@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Interface
 {
-    public interface ICountry
+    public interface ICountry : IRepository<Country>
     {
         IQueryable<Country> GetCountryForSport(int? sportId);
         Country GetCountryBasedOnTournament(int? tournamentId);

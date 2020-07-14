@@ -53,13 +53,5 @@ namespace HollywoodBets.Controllers
            
         }
 
-       [HttpPost]
-       [Route("Create")]
-       public TestTable Create([FromBody] TestTable testTable)
-        {
-            
-            return _eventRepository.Create(testTable);
-        }
-
     }
 }

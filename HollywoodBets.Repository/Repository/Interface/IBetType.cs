@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Interface
 {
-    public interface IBetType
+    public interface IBetType :IRepository<BetType>
     {
         IQueryable<BetType> GetBetTypesForTournament(int?tournamentId);
+        bool AddTournamentBetTypes(TournamentBetType tournamentBetType);
     }
 }

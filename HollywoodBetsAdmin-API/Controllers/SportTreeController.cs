@@ -60,38 +60,38 @@ namespace HollywoodBetsAdmin_API.Controllers
         {
             try
             {
-                var result = _sportTree.Create(sportTree); // returns a boolean based on the number of rows affected
+                var result = _sportTree.Add(sportTree); // returns a boolean based on the number of rows affected
 
                 if (result) // if the post was successfully added to the db it will return true 
-                    return StatusCode(200, "{\"status\": \"Successfully added\"}");
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Added"));
                 else // if the post was unsuccesful it will return false
-                    return BadRequest("Insert Failed.");
+                    return StatusCode(400,StatusCodes.ReturnStatusObject("Insert Failed."));
             }
             catch(Exception eo)
             {
-                return BadRequest("Insert Failed. "+ eo.Message);
-            }
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Insert Failed."));
+        }
         }
 
         //https://localhost:44356/api/SportTree/Put?sportId={id}
 
         [HttpPut]
         [Route("Put")]
-        public IActionResult Put(int?sportId, [FromBody] SportTree sportTree)
+        public IActionResult Put([FromBody] SportTree sportTree)
         {
             try
             {
-                if (!sportId.HasValue) return BadRequest("Oops something went wrong.");// if there was no value entered of sportId it will return a bad request.
-                var result = _sportTree.Update(sportId, sportTree); // searches the table using the given idea and if the item is found and updated it will return true
+                if (sportTree.Equals(null)) return BadRequest("Oops something went wrong.");// if there was no value entered of sportId it will return a bad request.
+                var result = _sportTree.Update(sportTree); // searches the table using the given idea and if the item is found and updated it will return true
 
                 if (result)
-                    return Ok("Update successful");
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Updated"));
                 else
-                    return BadRequest("Update failed.");
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Update Failed."));
             }
             catch(Exception e)
             {
-                return BadRequest("Update has failed "+e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Update Failed."));
             }
         }
 
@@ -105,13 +105,13 @@ namespace HollywoodBetsAdmin_API.Controllers
                 var result = _sportTree.Delete(sportId);//returns a bool based on a row being effected. 
 
                 if (result)
-                    return Ok("Delete Successful");
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Delete successful"));
                 else
-                    return BadRequest("Delete Failed");
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Delete Failed."));
             }
             catch(Exception e)
             {
-                return BadRequest("Delete Failed "+ e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("The item could not be Deleted. {0}"));
             }
         }
 
@@ -134,5 +134,32 @@ namespace HollywoodBetsAdmin_API.Controllers
                 return BadRequest("Something went wrong. "+ e.Message);
             }
         }
+
+        [HttpPost]
+        [Route("AddSportCountryMapping")]
+        public IActionResult AddSportCountryMapping([FromBody] SportCountry sportCountry)
+        {
+            try
+            {
+                if (sportCountry.Equals(null)) return StatusCode(400, StatusCodes.ReturnStatusObject("No input provided."));
+                var result = _sportTree.AddSportCountryMapping(sportCountry);
+
+                if(result)
+                {
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Added."));
+                }
+                else
+                {
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Insert has Failed."));
+                }
+            }
+            catch(Exception e)
+            {
+
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Insert has Failed. " + e.Message));
+            }
+        }
+
+
     }
 }

@@ -7,10 +7,10 @@ namespace HollywoodBets.Repository.Repository.Interface
 {
    public interface IRepository<T>
     {
-        void Add(T item);
+        bool Add(T item);
         IQueryable<T> GetAll();
-        void Update(T item);
-        T GetItem(int id);
-        void Delete(int id);
+        bool Update(T item);
+        T Find(int? id);
+        bool Delete(int? id);
     }
 }

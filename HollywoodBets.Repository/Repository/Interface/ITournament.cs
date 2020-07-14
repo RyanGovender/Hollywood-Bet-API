@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Interface
 {
-    public interface ITournament
+    public interface ITournament :IRepository<Tournament>
     {
         Tournament GetTournament(int?tournamentId);
         IQueryable<Tournament> GetAllTournamentsForSportBasedOnCountry(int?sportId,int?countryId);
+        bool AddSportTournamentCountry(SportTournament sportTournament);
     }
 }

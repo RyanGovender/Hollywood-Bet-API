@@ -8,20 +8,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
+using System.Data;
 
 namespace HollywoodBets.Repository.Repository.Implementation
 {
-    public class SportTreeRepository : ISportTree , ISqlRun<SportTree>
+    public class SportTreeRepository : ISportTree 
     {
-        private IDb _dbService;
-      
-
-        public SportTreeRepository(IDb dBContext)
-        {
-            _dbService = dBContext;
-          
-        }
-
+        
         public IQueryable<SportTree> GetAll()
         {
             using (var connection = DatabaseService.SqlConnection())
@@ -31,7 +24,7 @@ namespace HollywoodBets.Repository.Repository.Implementation
             }
         }
 
-        public bool Create(SportTree sportTree)
+        public bool Add(SportTree sportTree)
         {
             using(var connection = DatabaseService.SqlConnection())
             {
@@ -56,13 +49,13 @@ namespace HollywoodBets.Repository.Repository.Implementation
             
         }
 
-        public bool Update(int?id,SportTree sportTree)
+        public bool Update(SportTree sportTree)
         {
             using (var connection = DatabaseService.SqlConnection())
             {
                 var parameters = new
                 {
-                     Id = id,
+                     sportTree.SportId,
                      sportTree.SportName,
                      sportTree.LogoUrl
                 };
@@ -70,8 +63,8 @@ namespace HollywoodBets.Repository.Repository.Implementation
                 var affectedRows = connection.Execute("UPDATE SportTree SET " +
                     "SportName=@SportName," +
                     "LogoUrl=@LogoUrl " +
-                    "WHERE SportId =@Id"
-                    ,parameters);
+                    "WHERE SportId =@SportId"
+                    , parameters);
                 return affectedRows > 0;
             }
         }
@@ -80,7 +73,7 @@ namespace HollywoodBets.Repository.Repository.Implementation
         {
             using(var connection = DatabaseService.SqlConnection())
             {
-                var parameters = new { Id = id };
+                var parameters = new { @Id = id };
                 var affectedRows =connection.Execute("DELETE SportTree WHERE SportId = @Id",parameters);
                 return affectedRows > 0;
             }
@@ -101,11 +94,19 @@ namespace HollywoodBets.Repository.Repository.Implementation
             }
         }
 
-        public IQueryable<SportTree> RunSql(string sqlFormat)
+        public bool AddSportCountryMapping(SportCountry sportCountry)
         {
-            return _dbService.dBContext().SportTree.FromSqlRaw($"{sqlFormat}").AsQueryable();
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    sportCountry.CountryId,
+                    sportCountry.SportId
+                };
+
+                var result = connection.Execute("sp_SportCountry",parameters,commandType:CommandType.StoredProcedure);
+                return result < 0;
+            }
         }
-
-
     }
 }

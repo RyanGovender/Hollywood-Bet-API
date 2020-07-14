@@ -1,0 +1,615 @@
+2020-07-13 07:40:40,250  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 07:40:40,316  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 07:40:40,325  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 07:40:43,236  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 07:40:55,197  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 07:40:55,362  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 07:40:55,428  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 07:40:55,495  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 07:40:55,511  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 07:40:55,541  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 07:40:56,651  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 07:41:00,267  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5 successful.
+ 2020-07-13 07:41:00,362  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5 successful.
+ 2020-07-13 07:41:02,114  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for sport id : 5 and countryId : 1 successful.
+ 2020-07-13 07:41:04,875  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 07:41:04,884  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 07:41:04,886  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 07:41:04,904  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 07:41:04,920  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 07:41:05,221  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 07:53:42,418  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 07:53:42,460  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 07:53:42,462  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 07:53:42,480  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 07:53:42,490  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 07:53:42,494  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 07:53:43,281  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 07:54:11,056  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 07:54:11,084  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 07:54:11,113  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 07:54:11,166  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 07:54:11,358  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 07:54:11,561  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 07:54:12,651  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:01:45,965  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:01:46,234  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:01:46,421  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:01:46,612  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:01:46,750  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:01:46,771  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:01:48,215  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:11:30,719  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:11:30,856  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:11:30,928  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:11:30,939  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:11:30,942  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:11:31,004  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:11:31,961  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:14:01,652  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:14:02,381  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:14:02,393  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:14:02,673  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:14:02,813  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:14:02,823  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:14:04,083  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:14:53,182  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:14:53,257  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:14:53,262  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:14:53,297  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:14:53,311  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:14:53,328  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:14:54,104  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:16:04,987  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:16:05,071  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:16:05,093  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:16:05,107  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:16:05,108  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:16:05,127  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:16:06,173  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:16:44,500  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:16:44,651  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:16:44,707  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:16:44,708  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:16:44,911  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:16:45,224  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:16:45,741  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:17:09,073  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:17:09,183  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:17:09,204  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:17:09,244  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:17:09,417  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:17:09,644  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:17:09,644  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:18:14,121  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:18:14,440  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:18:14,648  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:18:14,672  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:18:14,672  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:18:14,715  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:18:15,538  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:18:44,714  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:18:44,947  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:18:45,134  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:18:45,135  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:18:45,697  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:18:45,741  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:18:47,663  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:19:07,281  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:19:07,649  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:19:07,671  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:19:07,675  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:19:07,752  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:19:07,817  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:19:08,657  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:23:13,121  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 08:23:13,192  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 08:23:13,238  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 08:23:14,747  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:23:29,278  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:23:29,561  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:23:29,601  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:23:29,613  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:23:29,697  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:23:29,806  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:23:30,742  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 08:27:49,861  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 08:27:50,134  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 08:27:50,179  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 08:27:51,390  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:29:02,477  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 08:29:02,925  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 08:29:02,936  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 08:29:02,947  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 08:29:02,965  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 08:29:02,996  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 08:29:03,621  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 09:47:02,263  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 09:47:02,568  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 09:47:02,722  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 09:47:04,782  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 09:47:48,993  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 09:47:49,536  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 09:47:49,600  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 09:47:49,694  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 09:47:49,751  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 09:47:49,763  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 09:47:50,414  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 09:49:19,370  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 09:49:19,380  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 09:49:19,382  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 09:49:19,524  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 09:49:19,759  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 09:49:19,800  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 09:49:20,725  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 09:50:28,109  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 09:50:29,779  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 09:50:29,821  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 09:50:30,287  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 09:50:30,424  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 09:50:30,640  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 09:50:31,390  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 09:51:13,534  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 09:51:13,825  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 09:51:14,266  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 09:51:14,295  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 09:51:14,297  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 09:51:14,301  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 09:51:15,730  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 10:14:38,943  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 10:14:39,046  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 10:14:39,101  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 10:14:40,651  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 10:16:37,481  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 10:16:38,068  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 10:16:38,243  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 10:16:38,277  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 10:16:38,427  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 10:16:38,434  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 10:16:38,964  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 10:40:18,416  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 10:40:18,535  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 10:40:18,538  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 10:40:19,717  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 10:40:34,700  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 10:40:34,889  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 10:40:35,039  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 10:40:35,052  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 10:40:35,193  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 10:40:35,246  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 10:40:36,071  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:05:01,909  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 11:05:02,116  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 11:05:02,120  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 11:05:03,829  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:05:16,744  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:05:16,885  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:05:16,917  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:05:16,934  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:05:16,956  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:05:16,984  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:05:17,910  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:16:45,168  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 11:16:45,340  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 11:16:45,354  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 11:16:46,600  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:24:24,404  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:24:24,478  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:24:24,488  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:24:24,506  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:24:24,516  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:24:24,536  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:24:25,541  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:24:45,656  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:24:45,742  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:24:45,742  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:24:45,759  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:24:46,054  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:24:46,123  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:24:47,384  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:24:51,589  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:24:51,726  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:24:51,742  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:24:51,839  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:24:51,742  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:24:52,402  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:24:53,247  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:25:47,641  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:25:48,184  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:25:48,268  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:25:48,293  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:25:48,293  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:25:48,313  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:25:49,489  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:26:55,146  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:26:55,781  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:26:55,965  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:26:55,982  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:26:55,987  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:26:56,042  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:26:57,039  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:29:05,720  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:29:06,379  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:29:06,381  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:29:06,382  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:29:06,382  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:29:06,422  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:29:07,346  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:29:50,196  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:29:51,356  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:29:51,879  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:29:51,926  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:29:51,954  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:29:52,153  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:29:52,563  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:30:32,758  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:30:33,129  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:30:33,318  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:30:33,367  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:30:33,378  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:30:33,993  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:30:34,708  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:31:17,181  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:31:17,524  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:31:17,692  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:31:17,703  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:31:17,741  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:31:18,185  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:31:19,112  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:32:38,321  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:32:39,190  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:32:39,634  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:32:39,672  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:32:39,806  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:32:40,221  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:32:40,420  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:32:52,861  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:32:52,968  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:32:52,969  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:32:52,986  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:32:53,076  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:32:53,082  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:32:54,089  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:33:59,783  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:33:59,994  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:34:00,317  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:34:00,326  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:34:00,329  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:34:01,162  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:34:01,579  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:35:24,711  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:35:25,005  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:35:25,557  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:35:25,990  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:35:26,878  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:35:27,452  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:35:30,122  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:35:51,188  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:35:51,302  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:35:51,333  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:35:51,386  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:35:51,412  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:35:51,431  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:35:51,667  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:36:32,436  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:36:32,752  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:36:32,870  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:36:32,905  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:36:32,933  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:36:32,933  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:36:33,697  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:38:24,024  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:38:24,472  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:38:24,597  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:38:24,605  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:38:24,664  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:38:25,242  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:38:25,631  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:38:40,161  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:38:40,358  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:38:40,401  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:38:40,406  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:38:40,427  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:38:40,452  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:38:41,472  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:39:59,642  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:39:59,789  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:39:59,959  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:39:59,973  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:39:59,977  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:40:00,097  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:40:00,799  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 11:41:17,052  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 11:41:17,052  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 11:41:17,090  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 11:41:17,232  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 11:41:17,242  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 11:41:17,246  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 11:41:18,273  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:30:37,644  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 13:30:37,766  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 13:30:37,776  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 13:30:39,734  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:31:52,967  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5 successful.
+ 2020-07-13 13:31:52,990  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 5 successful.
+ 2020-07-13 13:31:56,056  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for sport id : 5 and countryId : 1 successful.
+ 2020-07-13 13:31:58,009  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:31:58,048  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:31:58,084  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:31:58,125  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:31:58,129  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:31:58,346  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:32:12,411 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:35:30,547  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 13:35:30,690  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 13:35:30,702  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 13:35:32,046  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:36:23,698  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:36:23,903  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:36:23,926  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:36:23,947  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:36:23,964  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:36:23,973  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:36:24,924  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:38:39,554  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 13:38:39,774  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 13:38:39,781  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 13:38:43,012  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:42:43,523 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:52:35,798  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 13:52:35,966  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 13:52:36,025  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 13:52:40,223  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:52:58,783  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:52:59,283  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:52:59,404  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:52:59,527  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:52:59,534  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:52:59,548  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:53:00,648  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:53:20,925 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:55:15,726 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:57:23,217  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:57:23,554  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:57:23,651  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:57:23,672  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:57:23,710  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:57:23,801  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:57:25,555  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:57:34,037 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:57:52,272  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:57:52,516  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:57:52,915  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:57:52,916  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:57:52,939  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:57:53,010  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:57:55,877  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:58:12,615 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:58:29,109  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:58:29,187  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:58:29,209  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:58:29,210  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:58:29,340  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:58:29,624  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:58:31,536  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:58:42,472 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:58:59,990  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:59:00,010  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:59:00,010  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:59:00,196  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:59:00,462  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:59:00,688  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:59:01,744  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 13:59:19,062 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 13:59:51,635  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 13:59:52,228  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 13:59:52,326  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 13:59:52,328  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 13:59:52,346  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 13:59:52,385  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 13:59:53,447  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:00:02,329 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 14:00:33,675  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:00:33,690  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:00:33,690  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:00:33,690  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:00:33,872  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:00:33,887  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:00:35,175  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:00:43,313 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 14:04:41,883 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet slip was not created.
+ 2020-07-13 14:12:11,873  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 14:12:11,913  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 14:12:11,921  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 14:12:13,495  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:14:08,166 ERROR HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Creating bet slip has failed.
+ 2020-07-13 14:17:19,647  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 14:17:19,687  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 14:17:19,691  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 14:17:20,974  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:17:28,050  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:17:28,204  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:17:28,270  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:17:28,283  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:17:28,293  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:17:28,353  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:17:28,987  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:17:37,336  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:17:45,418  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3 successful
+ 2020-07-13 14:17:53,776  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:19:24,251  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 14:19:24,327  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 14:19:24,334  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 14:19:25,688  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:19:38,917  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:19:39,260  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:19:39,272  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:19:39,304  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:19:39,360  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:19:39,364  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:19:40,263  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:19:54,766  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:20:19,449  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:20:19,547  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:20:19,578  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:20:19,607  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:20:19,618  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:20:19,626  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:20:19,745  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:22:43,410  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:22:43,441  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:22:43,596  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:22:43,607  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:22:43,645  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:22:43,675  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:22:43,790  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:24:27,391  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:24:27,492  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:24:27,498  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:24:27,811  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:24:27,944  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:24:27,958  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:24:28,191  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:27:43,694  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:27:44,187  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:27:44,195  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:27:44,214  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:27:44,221  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:27:44,301  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:27:44,400  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:31:31,717  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:31:31,862  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:31:31,953  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:31:31,960  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:31:32,092  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:31:32,462  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:31:32,953  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:32:05,078  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:32:05,156  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:32:05,459  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:32:05,469  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:32:05,477  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:32:05,620  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:32:05,893  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:33:13,773  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:33:30,584  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:33:48,007  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :3 successful
+ 2020-07-13 14:33:58,283  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:34:06,643  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:34:27,455  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:34:27,566  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:34:27,580  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:34:27,581  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:34:27,600  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:34:27,687  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:34:27,788  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:34:34,545  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:34:57,713  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:34:57,806  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:34:57,808  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:34:57,833  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:34:57,874  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:34:58,032  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:34:58,234  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:35:03,254  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:36:05,595  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:36:05,879  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:36:05,942  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:36:05,950  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:36:06,068  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:36:06,097  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:36:06,281  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:36:12,130  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:37:10,911  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:37:11,029  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:37:11,062  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:37:11,171  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:37:11,186  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:37:11,409  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:37:12,348  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:37:20,727  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:37:20,924  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:37:20,959  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:37:20,959  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:37:21,365  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:37:21,376  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:37:22,084  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:37:35,159  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:37:59,608  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:37:59,664  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:37:59,761  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:37:59,764  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:37:59,770  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:37:59,804  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:37:59,987  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:38:09,574  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:38:37,314  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:38:37,399  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:38:37,407  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:38:37,663  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:38:37,683  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:38:37,683  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:38:38,582  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:39:03,694  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:39:40,203  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:39:40,385  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:39:40,396  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:39:40,415  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:39:40,469  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:39:40,566  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:39:40,666  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:41:19,057  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:42:39,624  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:42:39,908  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:42:39,963  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:42:39,987  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:42:39,988  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:42:40,136  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:42:40,909  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:42:53,827  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:43:16,345  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:43:39,264  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:43:39,441  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:43:39,449  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:43:39,543  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:43:39,866  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:43:39,868  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:43:40,568  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:44:12,647  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:44:48,065  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:44:48,171  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:44:48,211  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:44:48,215  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:44:48,217  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:44:48,255  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:44:49,299  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:45:02,339  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:46:23,725  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:46:23,799  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:46:23,820  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:46:23,863  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:46:23,871  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:46:23,904  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:46:24,045  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:46:39,646  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 14:48:36,662  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 14:48:36,844  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 1 successful
+ 2020-07-13 14:48:37,033  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 1 successful
+ 2020-07-13 14:48:37,039  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 1 successful.
+ 2020-07-13 14:48:37,039  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 1 successful.
+ 2020-07-13 14:48:37,044  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 1 has been successfully executed.
+ 2020-07-13 14:48:37,931  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-13 14:48:51,044  INFO HollywoodBets.Controllers.BetSlipController.? [?] - MESSAGE: Bet Slip successfully created.
+ 2020-07-13 20:23:55,908  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 20:23:56,009  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 20:23:56,019  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 20:23:57,137  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 20:30:50,244  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 20:30:50,392  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 20:30:50,409  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 20:30:51,725  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-13 23:57:50,606  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-13 23:57:50,746  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-13 23:57:50,806  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-13 23:57:52,136  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 

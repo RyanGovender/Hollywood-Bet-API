@@ -9,7 +9,7 @@ namespace HollywoodBets.Repository.DAL
         public static object ReturnStatusObject(string message)
         {
             string parm1 = "\"status\" : ";
-            string parm2 = $"\"${message}\"";
+            string parm2 = $"\"{message}\"";
             return "{" + parm1 + parm2 + "}";
         }
     }

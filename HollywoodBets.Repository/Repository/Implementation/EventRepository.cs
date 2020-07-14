@@ -12,22 +12,54 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Implementation
 {
-    public class EventRepository : IEvent, ISqlRun<Event>
+    public class EventRepository : IEvent
     {
-        private IDb _dbService;
-        public EventRepository(IDb dbService)
+        public bool Add(Event item)
         {
-            _dbService = dbService;
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    item.TournamentId,
+                    item.EventName,
+                    item.EventDate
+                };
+
+                var result = connection.Execute("sp_AddEvent", parameters, commandType: CommandType.StoredProcedure);
+
+                return result < 0;
+            }
         }
 
-        public TestTable Create(TestTable testTable)
+        public bool Delete(int? id)
         {
-            testTable = new TestTable();
-            testTable.TestID = 3;
-            testTable.TestStuff = "sckiasbas dsaj dkas";
-            testTable.TestData = "saidas djas djas ";
-            _dbService.dBContext().TestTables.FromSqlInterpolated($"EXECUTE dbo.AddToTest");
-            return testTable;
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new { eventID = id };
+                var affectedRows = connection.Execute("sp_DeleteAnEvent", parameters, commandType: CommandType.StoredProcedure);
+                return affectedRows < 0;
+            }
+        }
+
+        public Event Find(int? id)
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    Id = id
+                };
+                var result = connection.Query<Event>("sp_FindAnEvent", parameters, commandType: CommandType.StoredProcedure);
+                return result.Any() ? result.FirstOrDefault() : null;
+            }
+        }
+
+        public IQueryable<Event> GetAll()
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<Event>("sp_GetAllEvents", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
         }
 
         public IQueryable<Event> GetAllEventsForTournament(int? tournamentId)
@@ -39,10 +71,20 @@ namespace HollywoodBets.Repository.Repository.Implementation
             }
         }
 
-        public IQueryable<Event> RunSql(string sqlFormat)
+        public bool Update(Event item)
         {
-            return _dbService.dBContext().Event.FromSqlRaw($"{sqlFormat}").AsQueryable();
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    item.EventId,
+                    item.TournamentId,
+                    item.EventName,
+                    item.EventDate
+                };
+                var affectedRows = connection.Execute("sp_UpdateEvent", parameters, commandType: CommandType.StoredProcedure);
+                return affectedRows < 0;
+            }
         }
-      
     }
 }

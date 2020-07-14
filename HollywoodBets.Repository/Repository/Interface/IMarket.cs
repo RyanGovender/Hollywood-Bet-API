@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Interface
 {
-    public interface IMarket
+    public interface IMarket:IRepository<Market>
     {
         IQueryable<Market> GetMarketsForBetType(int? betTypeId);
     }

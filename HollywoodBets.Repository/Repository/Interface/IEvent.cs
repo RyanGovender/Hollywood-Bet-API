@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace HollywoodBets.Repository.Repository.Interface
 {
-   public interface IEvent
+   public interface IEvent : IRepository<Event>
     {
         IQueryable<Event> GetAllEventsForTournament(int?tournamentId);
-        TestTable Create(TestTable testTable);
     }
 }
