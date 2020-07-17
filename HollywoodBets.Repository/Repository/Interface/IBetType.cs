@@ -1,4 +1,5 @@
 ﻿
+using HollywoodBets.Models.Custom_Models;
 using HollywoodBets.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,6 @@ namespace HollywoodBets.Repository.Repository.Interface
     {
         IQueryable<BetType> GetBetTypesForTournament(int?tournamentId);
         bool AddTournamentBetTypes(TournamentBetType tournamentBetType);
+        IQueryable<TournamentBetTypeVM> GetAllTournamentBetTypes();
     }
 }

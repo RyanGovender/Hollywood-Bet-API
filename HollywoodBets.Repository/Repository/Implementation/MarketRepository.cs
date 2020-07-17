@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using HollywoodBets.DAL;
+using HollywoodBets.Models.Custom_Models;
 using HollywoodBets.Models.Model;
 using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
@@ -23,6 +24,21 @@ namespace HollywoodBets.Repository.Repository.Implementation
                     item.MarketName
                 };
                 var result = connection.Execute("sp_AddMarket", parameters, commandType: CommandType.StoredProcedure);
+                return result < 0;
+            }
+        }
+
+        public bool AddMarketBetTypes(MarketBetType marketBetType)
+        {
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    marketBetType.MarketId,
+                    marketBetType.BetTypeId
+                };
+
+                var result = connection.Execute("sp_AddMarketBetType", parameters, commandType: CommandType.StoredProcedure);
                 return result < 0;
             }
         }
@@ -55,6 +71,14 @@ namespace HollywoodBets.Repository.Repository.Implementation
             using (var connection = DatabaseService.SqlConnection())
             {
                 return connection.Query<Market>("sp_GetAllMarkets", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
+        }
+
+        public IQueryable<MarektBetTypeViewModel> GetMarketBetTypes()
+        {
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<MarektBetTypeViewModel>("sp_GetMarketBetTypes", commandType: CommandType.StoredProcedure).AsQueryable();
             }
         }
 

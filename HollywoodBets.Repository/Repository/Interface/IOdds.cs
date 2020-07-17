@@ -10,5 +10,6 @@ namespace HollywoodBets.Repository.Repository.Interface
     public interface IOdds
     {
         IQueryable<MarketOdds> GetMarketOdds(int?tournamentId);
+        IQueryable<OddsViewModel> GetAllOdds();
     }
 }

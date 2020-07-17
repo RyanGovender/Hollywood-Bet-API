@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
 using System.Data;
+using HollywoodBets.Models.Custom_Models;
 
 namespace HollywoodBets.Repository.Repository.Implementation
 {
@@ -108,5 +109,38 @@ namespace HollywoodBets.Repository.Repository.Implementation
                 return result < 0;
             }
         }
+
+        public IQueryable<SportCountryViewModel> GetAllSportCountries()
+        {
+           using(var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<SportCountryViewModel>("sp_GetSportCountry", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
+        }
+
+        public bool DeteleSportCountry(int?id)
+        {
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameter = new { sportCountryId = id };
+                return connection.Execute("sp_DeleteSportCountry", parameter, commandType: CommandType.StoredProcedure) < 0;
+            }
+
+        }
+
+        public bool UpdateSportCountry(SportCountry sportCountry)
+        {
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new { sportCountry.SportCountryId 
+                ,sportCountry.SportId,
+                sportCountry.CountryId
+                };
+
+                return connection.Execute("sp_UpdateSportCountry", parameters, commandType: CommandType.StoredProcedure) < 0;
+            }
+        }
+
+
     }
 }

@@ -156,5 +156,59 @@ namespace HollywoodBetsAdmin_API.Controllers
                 return StatusCode(400, StatusCodes.ReturnStatusObject("Something went wrong."));
             }
         }
+
+
+        [HttpPost]
+        [Route("AddMarketBetTypes")]
+        public IActionResult AddMarketBetTypes([FromBody] MarketBetType marketBetType)
+        {
+            try
+            {
+                if (marketBetType == null) return StatusCode(400, StatusCodes.ReturnStatusObject("No items have been provided."));
+                var result = _marketRepository.AddMarketBetTypes(marketBetType);
+                if (result)
+                {
+                    _logger.LogInformation("Market Successfully Added");
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Added."));
+                }
+                else
+                {
+                    _logger.LogError("Market Bet Type Mapping Has Failed to Add. Market - {0}", marketBetType);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Market  Bet Type Mapping failed to add."));
+                }
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Error Market failed to add . Error - {0} , Data - {1}", e.Message, marketBetType);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Error Market  Bet Type Mapping Failed to Add."));
+            }
+        }
+
+
+        [HttpGet]
+        [Route("GetMarketBetTypes")]
+        public IActionResult GetMarketBetTypes()
+        {
+            try
+            {
+                var result = _marketRepository.GetMarketBetTypes();
+                if (result.Any())
+                {
+                    _logger.LogInformation("Successfully recieved Market Data.");
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogError("No Market data. Data - {0}", result);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("No Market data."));
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Error recieving data. Error - {0}.", e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Error recieving Market data."+ e.Message));
+            }
+        }
     }
 }

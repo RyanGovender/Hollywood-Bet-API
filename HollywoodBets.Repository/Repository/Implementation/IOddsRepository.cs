@@ -21,6 +21,14 @@ namespace HollywoodBets.Repository.Repository.Implementation
             _dbService = dbService;
         }
 
+        public IQueryable<OddsViewModel> GetAllOdds()
+        {
+          using(var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<OddsViewModel>("sp_GetAllOdds", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
+        }
+
         public IQueryable<MarketOdds> GetMarketOdds(int?tournamentId)
         {
             using(var connection = DatabaseService.SqlConnection())

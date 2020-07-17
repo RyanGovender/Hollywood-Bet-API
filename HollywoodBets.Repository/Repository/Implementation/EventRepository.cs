@@ -31,6 +31,23 @@ namespace HollywoodBets.Repository.Repository.Implementation
             }
         }
 
+        public bool AddOdds(Odds odds)
+        {
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                var parameters = new
+                {
+                    odds.MarketBetTypeId,
+                    odds.EventId,
+                    @oddsValue = Math.Round(odds.OddsValue,2)
+                };
+
+                var result = connection.Execute("sp_AddOdds", parameters, commandType: CommandType.StoredProcedure);
+
+                return result < 0;
+            }
+        }
+
         public bool Delete(int? id)
         {
             using (var connection = DatabaseService.SqlConnection())

@@ -10,5 +10,6 @@ namespace HollywoodBets.Repository.Repository.Interface
    public interface IEvent : IRepository<Event>
     {
         IQueryable<Event> GetAllEventsForTournament(int?tournamentId);
+        bool AddOdds(Odds odds);
     }
 }

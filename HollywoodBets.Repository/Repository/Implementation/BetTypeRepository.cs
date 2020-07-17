@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Data;
+using HollywoodBets.Models.Custom_Models;
+
 namespace HollywoodBets.Repository.Repository.Implementation
 {
     public class BetTypeRepository :IBetType
@@ -70,6 +72,14 @@ namespace HollywoodBets.Repository.Repository.Implementation
             using (var connection = DatabaseService.SqlConnection())
             {
                 return connection.Query<BetType>("sp_GetAllBetTypes", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
+        }
+
+        public IQueryable<TournamentBetTypeVM> GetAllTournamentBetTypes()
+        {
+            using(var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<TournamentBetTypeVM>("sp_GetAllTournamentBetTypes", commandType: CommandType.StoredProcedure).AsQueryable();
             }
         }
 

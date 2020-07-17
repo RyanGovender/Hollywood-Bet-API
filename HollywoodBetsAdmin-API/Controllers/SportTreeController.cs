@@ -160,6 +160,69 @@ namespace HollywoodBetsAdmin_API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetAllSportCountry")]
+        public IActionResult GetAllSportCountry()
+        {
+            try
+            {
+                var result = _sportTree.GetAllSportCountries();
+                if (result.Any())
+                {
+                    _logger.LogInformation("Successfully retrieved.");
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogInformation("No items found.");
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("No items available."));
+                }
+            }
+            catch
+            {
+                _logger.LogInformation("Failed to find items.");
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Failed to retrive items."));
+            }
+        }
 
+        [HttpDelete]
+        [Route("DeleteSportCountry")]
+        public IActionResult DeleteSportCountry(int? sportCountry)
+        {
+            try
+            {
+                if (!sportCountry.HasValue) return BadRequest("Oops something went wrong."); // if there was no value entered of sportId it will return a bad request.
+                var result = _sportTree.DeteleSportCountry(sportCountry);//returns a bool based on a row being effected. 
+
+                if (result)
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Delete successful"));
+                else
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Delete Failed."));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(400, StatusCodes.ReturnStatusObject("The item could not be Deleted. {0}"));
+            }
+        }
+
+        [HttpPut]
+        [Route("PutSportCountry")]
+        public IActionResult PutSportCountry([FromBody] SportCountry sportCountry)
+        {
+            try
+            {
+                if (sportCountry.Equals(null)) return BadRequest("Oops something went wrong.");// if there was no value entered of sportId it will return a bad request.
+                var result = _sportTree.UpdateSportCountry(sportCountry); // searches the table using the given idea and if the item is found and updated it will return true
+
+                if (result)
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Updated"));
+                else
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Update Failed."));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Update Failed."));
+            }
+        }
     }
 }

@@ -183,5 +183,30 @@ namespace HollywoodBetsAdmin_API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetAllSportTournmentCountries")]
+        public IActionResult GetAllSportTournmentCountries()
+        {
+            try
+            {
+                var result = _tournamentRepository.GetAllSportTournmentCountries();
+                if (result.Any())
+                {
+                    _logger.LogInformation("Successfully recieved Tournament Data.");
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogError("No Tournament data. Data - {0}", result);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("No Tournament data."));
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Error recieving data. Error - {0}. Data - {1}", e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Error recieving Tournament data."));
+            }
+        }
+
     }
 }

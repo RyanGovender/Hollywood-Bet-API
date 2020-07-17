@@ -49,6 +49,7 @@ namespace HollywoodBetsAdmin_API
             services.AddTransient<IEvent, EventRepository>();
             services.AddTransient<ITournament, TournamentRepository>();
             services.AddTransient<IBetType, BetTypeRepository>();
+            services.AddTransient<IOdds, IOddsRepository>();
 
             services.AddTransient<IDb, DatabaseService>();
         }

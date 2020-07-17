@@ -1,4 +1,5 @@
 ﻿
+using HollywoodBets.Models.Custom_Models;
 using HollywoodBets.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,8 @@ namespace HollywoodBets.Repository.Repository.Interface
     public interface ISportTree :IRepository<SportTree>
     {
         bool AddSportCountryMapping(SportCountry sportCountry);
+        IQueryable<SportCountryViewModel> GetAllSportCountries();
+        bool DeteleSportCountry(int? id);
+        bool UpdateSportCountry(SportCountry sportCountry);
     }
 }

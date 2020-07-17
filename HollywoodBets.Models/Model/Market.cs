@@ -13,7 +13,7 @@ namespace HollywoodBets.Models.Model
 
         public int MarketId { get; set; }
         public string MarketName { get; set; }
-        public decimal Odds { get; set; }
+        public float Odds { get; set; }
 
         public virtual ICollection<AllowedTournamentBets> AllowedTournamentBets { get; set; }
         public virtual ICollection<MarketBetType> MarketBetType { get; set; }

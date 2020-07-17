@@ -184,5 +184,30 @@ namespace HollywoodBetsAdmin_API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetAllTournamentBetTypes")]
+        public IActionResult GetAllTournamentBetTypes()
+        {
+            try
+            {
+                var result = _betTypeRepository.GetAllTournamentBetTypes();
+                if (result.Any())
+                {
+                    _logger.LogInformation("Successfully recieved BetType Data.");
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogError("No country BetType. Data - {0}", result);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("No BetType data."));
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Error recieving data. Error - {0}. Data - {1}", e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Error recieving BetType data."));
+            }
+        }
+
     }
 }

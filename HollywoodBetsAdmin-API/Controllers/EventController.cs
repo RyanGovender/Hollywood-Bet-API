@@ -18,11 +18,13 @@ namespace HollywoodBetsAdmin_API.Controllers
     {
         private ILogger<EventController> _logger;
         private IEvent _eventRepository;
+        private IOdds _oddsRepository;
 
-        public EventController(ILogger<EventController> logger, IEvent eventRepository)
+        public EventController(ILogger<EventController> logger, IEvent eventRepository, IOdds oddsRepository)
         {
             _logger = logger;
             _eventRepository = eventRepository;
+            _oddsRepository = oddsRepository;
         }
 
         [HttpGet]
@@ -154,6 +156,58 @@ namespace HollywoodBetsAdmin_API.Controllers
             {
                 _logger.LogError("Failed to located Event. Error - {0}", e.Message);
                 return StatusCode(400, StatusCodes.ReturnStatusObject("Something went wrong."));
+            }
+        }
+
+        [HttpPost]
+        [Route("AddOdds")]
+        public IActionResult AddOdds([FromBody] Odds odds)
+        {
+            try
+            {
+                if (odds == null) return StatusCode(400, StatusCodes.ReturnStatusObject("No items have been provided."));
+                var result = _eventRepository.AddOdds(odds);
+                if (result)
+                {
+                    _logger.LogInformation("Odds Successfully Added");
+                    return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Added."));
+                }
+                else
+                {
+                    _logger.LogError("Odds has Failed to Add. Event - {0}", odds);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("Odds failed to add."));
+                }
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Error Odds failed to add . Error - {0} , Data - {1}", e.Message, odds);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Error Odds Failed to Add." + e.Message));
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllOdds")]
+        public IActionResult GetAllOdds()
+        {
+            try
+            {
+                var result = _oddsRepository.GetAllOdds();
+                if (result.Any())
+                {
+                    _logger.LogInformation("Successfully recieved Event Data.");
+                    return Ok(result);
+                }
+                else
+                {
+                    _logger.LogError("No Event data. Data - {0}", result);
+                    return StatusCode(400, StatusCodes.ReturnStatusObject("No Event data."));
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Error recieving data. Error - {0}. Data - {1}", e.Message);
+                return StatusCode(400, StatusCodes.ReturnStatusObject("Error recieving Event data."));
             }
         }
     }

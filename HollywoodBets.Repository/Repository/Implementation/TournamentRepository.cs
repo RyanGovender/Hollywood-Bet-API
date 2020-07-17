@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using HollywoodBets.DAL;
+using HollywoodBets.Models.Custom_Models;
 using HollywoodBets.Models.Model;
 using HollywoodBets.Repository.DAL;
 using HollywoodBets.Repository.Repository.Interface;
@@ -73,6 +74,14 @@ namespace HollywoodBets.Repository.Repository.Implementation
             using (var connection = DatabaseService.SqlConnection())
             {
                 return connection.Query<Tournament>("sp_GetAllTournaments", commandType: CommandType.StoredProcedure).AsQueryable();
+            }
+        }
+
+        public IQueryable<SportCountryTournamentVM> GetAllSportTournmentCountries()
+        {
+            using (var connection = DatabaseService.SqlConnection())
+            {
+                return connection.Query<SportCountryTournamentVM>("sp_GetSportCountryTournaments", commandType: CommandType.StoredProcedure).AsQueryable();
             }
         }
 
