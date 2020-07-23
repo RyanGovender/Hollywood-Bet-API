@@ -19,9 +19,9 @@ namespace HollywoodBetsAdmin_API.Controllers
         private ILogger<TournamentController> _logger;
         private ITournament _tournamentRepository;
 
-        public TournamentController(ITournament tournamentRepository,ILogger<TournamentController> logger)
+        public TournamentController(IUnitOfWork tournamentRepository,ILogger<TournamentController> logger)
         {
-            _tournamentRepository = tournamentRepository;
+            _tournamentRepository = tournamentRepository.TournamentRepository;
             _logger = logger;
         }
 
@@ -44,10 +44,11 @@ namespace HollywoodBetsAdmin_API.Controllers
             }
             catch (Exception e)
             {
-                _logger.LogError("Error recieving data. Error - {0}. Data - {1}", e.Message);
+                _logger.LogError("Error recieving data. Error - {0}.", e.Message);
                 return StatusCode(400, StatusCodes.ReturnStatusObject("Error recieving Tournament data."));
             }
         }
+
         [HttpPost]
         [Route("Post")]
         public IActionResult Post([FromBody] Tournament tournament)

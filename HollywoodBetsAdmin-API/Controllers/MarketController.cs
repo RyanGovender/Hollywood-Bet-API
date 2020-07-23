@@ -19,10 +19,10 @@ namespace HollywoodBetsAdmin_API.Controllers
         private ILogger<MarketController> _logger;
         private IMarket _marketRepository;
 
-        public MarketController(ILogger<MarketController> logger, IMarket marketRepository)
+        public MarketController(ILogger<MarketController> logger, IUnitOfWork marketRepository)
         {
             _logger = logger;
-            _marketRepository = marketRepository;
+            _marketRepository = marketRepository.MarketRepository;
         }
 
         [HttpGet]

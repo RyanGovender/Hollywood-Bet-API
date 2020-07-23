@@ -16,13 +16,8 @@ namespace HollywoodBets.Repository.Repository.Implementation
 {
     public class BetSlipRepository : IBetSlip
     {
-        private IDb _dbService;
         private  int _lastBetID = 0;
 
-        public BetSlipRepository(IDb dbService)
-        {
-            _dbService = dbService;
-        }
         public bool Add(BetSlipViewModel betSlip)
         {
             var item = betSlip.betSlips;

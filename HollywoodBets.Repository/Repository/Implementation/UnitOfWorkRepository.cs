@@ -15,6 +15,7 @@ namespace HollywoodBets.Repository.Repository.Implementation
         public ISportTree SportTreeRepository { get; set; }
         public ITournament TournamentRepository { get; set; }
         public IBetSlip BetSlip { get; set; }
+        public IOdds OddsRepository { get; set; }
 
         public UnitOfWorkRepository(IBetType betType,
                                     ICountry country,
@@ -22,7 +23,8 @@ namespace HollywoodBets.Repository.Repository.Implementation
                                     IMarket market, 
                                     ISportTree sportTree,
                                     ITournament tournament,
-                                    IBetSlip betSlip
+                                    IBetSlip betSlip,
+                                    IOdds odds
                                    )
         {
             BetTypeRepository = betType;
@@ -32,6 +34,7 @@ namespace HollywoodBets.Repository.Repository.Implementation
             SportTreeRepository = sportTree;
             TournamentRepository = tournament;
             BetSlip = betSlip;
+            OddsRepository = odds;
         }
 
     }

@@ -22,9 +22,9 @@ namespace HollywoodBetsAdmin_API.Controllers
     {
         private ISportTree _sportTree;
         private ILogger<SportTreeController> _logger;
-        public SportTreeController(ISportTree sportTree,ILogger<SportTreeController> logger)
+        public SportTreeController(IUnitOfWork sportTree,ILogger<SportTreeController> logger)
         {
-            _sportTree = sportTree;
+            _sportTree = sportTree.SportTreeRepository;
             _logger = logger;
         }
 
@@ -212,7 +212,7 @@ namespace HollywoodBetsAdmin_API.Controllers
             try
             {
                 if (sportCountry.Equals(null)) return BadRequest("Oops something went wrong.");// if there was no value entered of sportId it will return a bad request.
-                var result = _sportTree.UpdateSportCountry(sportCountry); // searches the table using the given idea and if the item is found and updated it will return true
+                        var result = _sportTree.UpdateSportCountry(sportCountry); // searches the table using the given idea and if the item is found and updated it will return true
 
                 if (result)
                     return StatusCode(200, StatusCodes.ReturnStatusObject("Successfully Updated"));

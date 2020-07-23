@@ -20,11 +20,11 @@ namespace HollywoodBetsAdmin_API.Controllers
         private IEvent _eventRepository;
         private IOdds _oddsRepository;
 
-        public EventController(ILogger<EventController> logger, IEvent eventRepository, IOdds oddsRepository)
+        public EventController(ILogger<EventController> logger, IUnitOfWork unitOfWork)
         {
             _logger = logger;
-            _eventRepository = eventRepository;
-            _oddsRepository = oddsRepository;
+            _eventRepository = unitOfWork.EventRepository;
+            _oddsRepository = unitOfWork.OddsRepository;
         }
 
         [HttpGet]

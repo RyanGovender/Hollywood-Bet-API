@@ -1,0 +1,18 @@
+2020-07-17 07:59:59,172  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-17 07:59:59,545  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 7 has no items
+ 2020-07-17 08:00:13,388  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-17 08:00:13,824  INFO HollywoodBets.Controllers.EventController.? [?] - MESSAGE: Get events for tournament ID : 19 successful
+ 2020-07-17 08:00:13,901  INFO HollywoodBets.Controllers.TournamentsController.? [?] - MESSAGE: Get tournaments for tournamentId 19 successful.
+ 2020-07-17 08:00:13,913  INFO HollywoodBets.Controllers.OddsController.? [?] - MESSAGE: Get odds for markets for tournament Id : 19 successful
+ 2020-07-17 08:00:13,922  INFO HollywoodBets.Controllers.BetTypeController.? [?] - MESSAGE: Bet types for tournament Id 19 has been successfully executed.
+ 2020-07-17 08:00:13,931  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Get countries for sport id : 19 successful.
+ 2020-07-17 08:00:14,861  INFO HollywoodBets.Controllers.MarketController.? [?] - MESSAGE: Get all markets for bet type Id :1 successful
+ 2020-07-17 08:03:51,737  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-17 08:03:52,110  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-17 08:03:52,116  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-17 08:03:55,152  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 2020-07-17 08:31:03,064  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-17 08:31:03,212  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-17 08:31:03,261  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\21614\Source\Repos\Hollywood-Bet-API\HolluwoodBets
+ 2020-07-17 08:31:04,912  INFO HollywoodBets.Controllers.SportController.? [?] - MESSAGE: Successfully retrieved.
+ 

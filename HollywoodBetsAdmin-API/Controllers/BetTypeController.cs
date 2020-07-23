@@ -19,10 +19,10 @@ namespace HollywoodBetsAdmin_API.Controllers
         private IBetType _betTypeRepository;
         private ILogger<BetTypeController> _logger;
 
-        public BetTypeController(IBetType betType,ILogger<BetTypeController> logger)
+        public BetTypeController(IUnitOfWork betType,ILogger<BetTypeController> logger)
         {
             _logger = logger;
-            _betTypeRepository = betType;
+            _betTypeRepository = betType.BetTypeRepository;
         }
 
         [HttpGet]

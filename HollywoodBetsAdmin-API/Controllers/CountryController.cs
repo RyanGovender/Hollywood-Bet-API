@@ -20,10 +20,10 @@ namespace HollywoodBetsAdmin_API.Controllers
         private ILogger<CountryController> _logger;
         private ICountry _countryRepository;
 
-        public CountryController(ICountry countryRepository, ILogger<CountryController> logger)
+        public CountryController(IUnitOfWork countryRepository, ILogger<CountryController> logger)
         {
             _logger = logger;
-            _countryRepository = countryRepository;
+            _countryRepository = countryRepository.CountryRepository;
         }
 
         [HttpGet]
