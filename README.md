@@ -6,9 +6,13 @@ This project has 4 layers.
 #Models Layer (So models can be shared between both APIs)
 #Repository Layer
 
-This projects makes use of dependency injection (Constuctor Injection)
+## ERD Diagram
+
 All database interactions within this project is made executing stored procs using Dapper.
+![erd](https://user-images.githubusercontent.com/7023242/88667498-be785e80-d0e1-11ea-9c0b-2befa6dbd2a3.png)
+
 All controllers use Log4Net.
+This projects makes use of dependency injection (Constuctor Injection)
 
 Hollywood Bets Betting Website API
 
