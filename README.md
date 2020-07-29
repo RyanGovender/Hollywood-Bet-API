@@ -1,15 +1,25 @@
 # Hollywood-Bet-API
 
 This project has 4 layers.
-#Hollywood Bets Betting Website API
-#Hollywood Bets Admin Website API
-#Models Layer (So models can be shared between both APIs)
-#Repository Layer
+
+Hollywood Bets Betting Website API
+
+Hollywood Bets Admin Website API
+
+Models Layer (So models can be shared between both APIs)
+
+Repository Layer (So all the repos can also be shared between both projects and can be easily implemented with any new projects in the future.)
 
 ## ERD Diagram
 
 All database interactions within this project is made executing stored procs using Dapper.
 ![erd](https://user-images.githubusercontent.com/7023242/88667498-be785e80-d0e1-11ea-9c0b-2befa6dbd2a3.png)
+
+## Project Flow
+
+The Hollywood Bets Betting Website interacts with the API to get the data it needs. The API then gets the data from the database by executing stored procs using Dapper. The Admin website is in charge of all the CRUD for the system.
+
+![erd](https://user-images.githubusercontent.com/7023242/88777179-35b3fe00-d187-11ea-9157-d6da215b314b.png)
 
 ## Hollywood Bets Admin CRUD website API
 
